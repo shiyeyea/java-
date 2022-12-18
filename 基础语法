@@ -3,5 +3,16 @@ public class hello {
     public static void main(String[] args) {
         //sout打印下面一行（打印字符）
         System.out.println("hello  worlde");
+        //String后面可以用中文定义   还有英文（大小写）、$、_这三个
+        String 王者荣耀="最强王者";
+        //字母大小写敏感
+        System.out.println(王者荣耀);
+        //byte 最大数128
+        //flout 要在数字后面加F
+        //long  要在数字后面加L
+        //String 定义字符串
+        //布尔值  判断是非
+        //boolean flag=tuen（真）
+        //boolean flag=false（假）
     }
 }
