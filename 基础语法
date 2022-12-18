@@ -1,0 +1,7 @@
+public class hello {
+    //psvm打印下一行
+    public static void main(String[] args) {
+        //sout打印下面一行（打印字符）
+        System.out.println("hello  worlde");
+    }
+}
