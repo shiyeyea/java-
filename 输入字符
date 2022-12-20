@@ -1,0 +1,19 @@
+package com.shang.basis.operator;
+
+import java.util.Scanner;
+
+public class study1 {
+    public static void main(String[] args) {        
+        //创造一个扫描对象，用于收键盘数据
+        Scanner study1 = new Scanner(System.in);
+        System.out.println("使用Next接收：");
+        //判断用户有没有输入字符串
+        if (study1.hasNext()) {
+            //使用next接收
+            String str = study1.next();//next()不能有空格  有空格直接结束    nextLine()可以有空格以enter键结束
+            System.out.println("输入的内容为" + str);
+        }
+        //凡是属于IO流的类如果不关闭会一直占用资源，要养成好习惯用完就关掉
+        study1.close();
+    }
+}
