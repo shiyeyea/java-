@@ -21,3 +21,22 @@ public class variable {
 
     }
 }
+新的概念
+package com.shang.basis.operator;
+
+import java.util.Scanner;
+
+public class study2 {
+    public static void main(String[] args) {
+        Scanner study2= new Scanner(System.in);
+        int i=0;
+        float f=0.0F;
+        System.out.println("请输入数：");
+        if (study2.hasNextInt()){//nestInt 整数   nextFloat   浮点型
+            i=study2.nextInt();
+            System.out.println("整数为："+i);
+        }else{
+            System.out.println("输入不为整数");
+        }
+    }
+}
