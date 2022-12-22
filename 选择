@@ -1,0 +1,19 @@
+package com.shang.basis.struct;
+
+import java.util.Scanner;
+
+public class ifstudy1 {
+    public static void main(String[] args) {
+        Scanner ifstudy1=new Scanner(System.in);
+        System.out.println("请输入内容：");
+        String s=ifstudy1.nextLine();//可以输入字符
+        //equals :判断字符串是否相等
+        if (s.equals("Hello"))
+        {
+            System.out.println(s);
+        }else {
+            System.out.println("输入错误");
+        }
+        ifstudy1.close();
+    }
+}
