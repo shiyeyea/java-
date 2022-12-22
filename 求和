@@ -1,0 +1,23 @@
+package com.shang.basis.operator;
+
+import java.util.Scanner;
+
+public class study3 {
+    public static void main(String[] args) {
+        //我们可以输入多个数字，并求其总和与平均数，每输入一个数用回车确认，通过输入非数字来结束输入并输出执行结果：
+        Scanner study3=new Scanner(System.in);
+        //和
+        double sum=0;
+        //计算输入了多少个数字
+        int m=0;
+        //通过循环判断是否还有输入，并在面对每一次进行求和统计
+        while(study3.hasNextDouble()){
+            double x=study3.nextDouble();
+            m=m+1;//m++
+            sum=sum+x;
+        }
+        System.out.println(m+"个数和为"+sum);
+        System.out.println(m+"个数的平均值是"+(sum/m));
+        study3.close();
+    }
+}
