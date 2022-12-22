@@ -1,3 +1,4 @@
+if语句
 package com.shang.basis.struct;
 
 import java.util.Scanner;
@@ -15,5 +16,22 @@ public class ifstudy1 {
             System.out.println("输入错误");
         }
         ifstudy1.close();
+    }
+}
+switch语句（不能用浮点型）
+package com.shang.basis.struct;
+
+import java.util.Scanner;
+
+public class switchstudy {
+    public static void main(String[] args) {
+        Scanner switchstudy=new Scanner(System.in);
+        int grade=switchstudy.nextInt();
+        switch (grade){
+            case 1:
+                System.out.println("优秀"); break;
+
+        }
+        switchstudy.close();
     }
 }
