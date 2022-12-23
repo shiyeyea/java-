@@ -1,0 +1,13 @@
+package com.shang.basis.method;
+
+import java.lang.reflect.Parameter;
+
+public class parameter {
+    public static void main(String[] args) {
+        parameter parameter1 = new parameter();
+        parameter1.test(1);
+    }
+    public void test(int... i){//...i(可变参数)放在最后
+        System.out.println(i[0]);
+    }
+}
