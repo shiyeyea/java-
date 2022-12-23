@@ -24,3 +24,21 @@ public class study1 {
         System.out.println("max="+max);
     }
 }
+数组的使用（函数的调用）
+public static void main(String[] args) {
+        int[] add = {1, 2, 3, 4, 5};
+        int[] test=test(add);
+        printadd(test);
+    }
+    public static int[] test(int[] add){
+        int[] result=new int[add.length];
+        for (int i = 0,j= result.length-1; i < add.length; i++,j--) {
+            result[j]=add[i];
+        }
+        return result;
+    }
+    public static void printadd(int[] add){
+        for (int i = 0; i < add.length; i++) {
+            System.out.print(add[i]+" ");
+        }
+    }
