@@ -1,0 +1,25 @@
+public static void main(String[] args) {
+        int add[]={1,2,3,4,8,5,6};
+        int[] sort=sort(add);
+        System.out.println(Arrays.toString(sort(add)));
+    }
+    public static int[] sort(int[] add){
+        //临时变量
+        int tmp=0;
+        for (int i = 0; i < add.length; i++) {
+            boolean falg=false;
+            for (int i1 = 0; i1 < add.length-1-i; i1++) {
+                if (add[i1+1]<add[i1]){
+                    tmp=add[i1];
+                    add[i1]=add[i1+1];
+                    add[i1+1]=tmp;
+                    falg=true;
+                }
+                if (falg=false){
+                    break;
+                }
+            }
+
+        }
+        return add;
+    }
