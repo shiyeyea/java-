@@ -1,0 +1,12 @@
+public static void main(String[] args) {
+        int[]a={1,58,6,4,8,54};
+        //打印数组元素Arrays.toString
+        System.out.println(Arrays.toString(a));
+        System.out.println("================================");//分割线
+        Arrays.sort(a);//数组进行排序：升序
+        System.out.println(Arrays.toString(a));
+        System.out.println("================================");
+        Arrays.fill(a,2,4, 0);//数组填充( 2-4之间)
+        System.out.println(Arrays.toString(a));
+    }
+}
