@@ -1,0 +1,18 @@
+import java.lang.reflect.Parameter;
+
+public class study2 {
+    public static void main(String[] args) {
+        person person=new person();
+        System.out.println(person.name);//null
+        study2.change(person);
+        System.out.println(person.name);
+    }
+    public static void change(person person){
+        //perosn是一个对象：指向--->person person=new person();这是一个具体的人，可以改变属性！
+        person.name="山楂汁";
+    }
+}
+//定义了一个perosn类，有一个属性：name
+class person{
+    String name;//null
+}
