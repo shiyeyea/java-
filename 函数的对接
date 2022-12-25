@@ -1,0 +1,24 @@
+//主函数
+public static void main(String[] args) {
+        //类：抽象的，实例化
+        //类实例化后会返回一个自己的对象！
+        //study3对象就是一个study3类的具体实例！
+        study3 xiaoshang=new study3();
+        study3 xiatou=new study3();
+        xiatou.age=15;
+        xiatou.name="ssz";
+
+        System.out.println(xiatou.name);
+        System.out.println(xiatou.age);
+        xiaoshang.name="sbz";
+        xiaoshang.age=154;
+        System.out.println(xiaoshang.name);
+        System.out.println(xiaoshang.age);
+    }
+    对接函数
+    //属性：字段
+    String name;
+    int age;
+    public void study(){
+        System.out.println(this.name+"在学习");
+    }
