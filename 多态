@@ -1,4 +1,16 @@
- public static void main(String[] args) {
+多态注意事项:
+  1.多态是方法的多态，属性没有多
+  2父类和子类，有联系 。    类型转换异常（CLassCastException） 
+  3.存在条件: 继承关系，方法需要重写，父类引用指向子类对象!Father fi = new Son();
+不能重写的情况：
+  1.static 方法，属于类，它不属于实例
+  2，final 常量:
+  3.private方法
+  
+  
+  
+  
+public static void main(String[] args) {
         //一个对象的实际类型是确定的
         // new Student();
         // new Person();
