@@ -10,5 +10,6 @@
         //studybaba 父类型，可以指向子类，但是不能调用子类独有的方认
         studybaba nb=new study();
         //子类重写了父类的方法，执行子类的方法
+        object nn=new study();
 
     }
