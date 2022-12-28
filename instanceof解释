@@ -1,0 +1,10 @@
+public static void main(String[] args) {
+        //Object>String
+        //Object>father>son
+        Object sb=new son();
+        //System.out.println(x instanceof y);//能不能翻译通过
+        System.out.println(sb instanceof son);
+        System.out.println(sb instanceof farther);
+        System.out.println(sb instanceof Object);
+        System.out.println(sb instanceof String);
+    }
