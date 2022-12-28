@@ -1,0 +1,12 @@
+//赋初始值 
+    {
+        System.out.println("匿名代码块");
+    }
+    //只执行一次
+    static {
+        System.out.println("静态代码块");
+    }
+
+    public demo1(){
+        System.out.println("构造方法");
+    }
