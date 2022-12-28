@@ -1,0 +1,9 @@
+package com.shang.basis.oop.study2;
+//abstract 抽象类:  类 extends:单维承~  (接口可以多继承)
+public  abstract class demo02 {
+    //约束~有人帮我们实现~
+    //abstract ，抽象方法，只有方法名字，没有方法的实现!
+    public abstract void dosamething();
+
+    //不能new这个抽象类，只能靠子类去实现它:约束!
+}
