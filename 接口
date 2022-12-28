@@ -1,0 +1,54 @@
+接口的作用:
+1.约束
+2.定义一些方法，让不同的人实现~ 10 --->1
+3. public abstract
+4.public static final
+5.接口不能被实例化~，接口中没有构造方法~
+6.implements可以实现多个接口
+7.必须要重写接口中的方法~
+
+package com.shang.basis.oop.study3;
+
+//抽象类： extends
+//类 可以实现接口 implements 接口
+//实现接口的类，就需要重写接口中的方法~
+public class userserviceimpl implements userservice,timeservice{
+    @Override
+    public void add(String name) {
+
+    }
+
+    @Override
+    public void srr(String name) {
+
+    }
+
+    @Override
+    public void qrr(String name) {
+
+    }
+
+    @Override
+    public void stt(String name) {
+
+    }
+}
+接口1
+package com.shang.basis.oop.study3;
+//interface    定义的关键字，接口都需要有实现类
+public interface userservice {
+    //定义的数为常量（静态）
+
+
+    // 接口中的所有定义的方法其实都是抽象的 public abstract
+    void add(String name);
+    void srr(String name);
+    void qrr(String name);
+    void stt(String name);
+}
+接口2
+package com.shang.basis.oop.study3;
+
+public interface timeservice {
+    void add(String time);
+}
