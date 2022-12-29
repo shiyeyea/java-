@@ -42,7 +42,7 @@ int a=1;
         //ctrl+alt+t(选中)
         try {
             System.out.println(a/b);
-        } catch (Exception e) {
+        } catch (Exception e) {//抛出异常throw
             throw new RuntimeException(e);//打印错误的栈信息
         } finally {
         }
