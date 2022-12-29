@@ -56,7 +56,7 @@ public class main {
     public static void main(String[] args) {
     study nb=new study();
     nb.setName("尚振");
-    System.out.println(nb.getName());
+    System.out.println(nb.getName());// 输出用get
     nb.setAge(-3);//不合法的
         System.out.println(nb.getAge());
     }
