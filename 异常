@@ -35,3 +35,16 @@ int a=1;
 
         }
         //finally 可以不要  假设IO，资源，关闭！
+快捷键
+    public static void main(String[] args) {
+        int a=1;
+        int b=0;
+        //ctrl+alt+t(选中)
+        try {
+            System.out.println(a/b);
+        } catch (Exception e) {
+            throw new RuntimeException(e);//打印错误的栈信息
+        } finally {
+        }
+
+    }
