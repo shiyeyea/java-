@@ -1,0 +1,43 @@
+实际应用中的经验总结：
+   处理运行时异常时，采用逻辑去合理规避同时辅助 try-catch 处理
+   在多重catch块后面，可以加一个catch (Exception)来处理可能会被遗漏的异常
+   对于不确定的代码，也可以加上 try-catch ，处理潜在的异常
+   尽量去处理异常，切忌只是简单地调用 printStackTrace()去打印输出
+   具体如何处理异常，要根据不同的业务需求和异常类型去决定
+   尽量添加finally语句块去释放占用的资源
+   
+   //自定义的异常类
+public class diyunusual extends Exception{
+    //传递数字>10
+    
+    private int derai1;
+
+    public diyunusual(int a) {
+        this.derai1=a;
+    }
+    //toSting
+
+    @Override
+    public String toString() {
+        return "diyunusual{" +
+                "derai1=" + derai1 +
+                '}';
+    }
+    public class test {
+    //可能会存在异常的方法
+    static void tes(int a) throws diyunusual{
+        System.out.println("传递的参数为，"+a);
+        if (a>10){
+            throw new diyunusual(a);//抛出
+        }
+        System.out.println("OK");
+    }
+
+
+    public static void main(String[] args){
+        try {
+            tes(1);
+        } catch (diyunusual e) {
+            System.out.println("diyunusual"+e);
+        }
+    }
