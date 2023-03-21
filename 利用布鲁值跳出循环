@@ -1,0 +1,27 @@
+ public static void main(String[] args) {
+        int[][] array={
+                {1,2,3,41,25},
+                {1,4,89,57,14},
+                {48,48,564,18,},
+        };
+        Scanner sz=new Scanner(System.in);
+        while (sz.hasNext()){
+            int z= sz.nextInt();
+            boolean flag=false;//利用boolean值跳出循环
+            for (int i = 0; i < array.length; i++) {
+                for (int j = 0; j < array[i].length; j++) {
+                    if(z==array[i][j]){
+                        System.out.println("第"+(i+1)+"行"+"第"+(j+1)+"列");
+                        flag=true;
+                        break;
+                    }
+                }
+                if(flag==true){
+                    break;
+                }//利用boolean值跳出循环
+            }
+            if(flag==false){
+                System.out.println("没有这个数");
+            }//利用boolean值跳出循环
+        }
+    }
